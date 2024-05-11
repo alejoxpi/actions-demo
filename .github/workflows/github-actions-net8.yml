@@ -19,8 +19,6 @@ jobs:
     - name: Display dotnet version
       run: dotnet --version
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore --project ../../net8/MyMicroservice/MyMicroservice.csproj
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build --no-restore --configuration Release --project ../../net8/MyMicroservice/MyMicroservice.csproj

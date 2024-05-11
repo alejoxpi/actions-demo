@@ -22,3 +22,5 @@ jobs:
       run: dotnet restore ./dotnet8-xunit-unit-testing-guide/ZiggyRafiqConsoleApp/ZiggyRafiqConsoleApp.csproj
     - name: Build
       run: dotnet build --no-restore --configuration Release ./dotnet8-xunit-unit-testing-guide/ZiggyRafiqConsoleApp/ZiggyRafiqConsoleApp.csproj
+    - name: Test
+      run: dotnet test ./dotnet8-xunit-unit-testing-guide/ZiggyRafiqConsoleApp.Tests

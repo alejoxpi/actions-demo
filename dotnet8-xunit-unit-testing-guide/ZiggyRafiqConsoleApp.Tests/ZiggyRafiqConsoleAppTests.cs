@@ -13,7 +13,7 @@ namespace ZiggyRafiqConsoleApp.Tests
             int result = a + b;
 
             // Assert
-            Assert.Equal(6, result);
+            Assert.Equal(5, result);
         }
 
         [Fact]
